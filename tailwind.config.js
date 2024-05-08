@@ -58,3 +58,44 @@ module.exports = {
       },
     },
   },
+
+  /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        white: "#fcfefe",
+        primary: "#1f2b6c",
+        secondary: "#159eec",
+        accent: "#bfd2f8",
+        black: "#202124",
+        black1: "#000",
+        gray: "rgba(255, 255, 255, 0.5)",
+      },
+      spacing: {},
+      fontFamily: {
+        "body-2": "'Work Sans'",
+        "display-2": "'Yeseva One'",
+      },
+      borderRadius: {
+        "31xl": "50px",
+        "8xs": "5px",
+      },
+    },
+    fontSize: {
+      base: "16px",
+      "17xl": "36px",
+      lg: "18px",
+      sm: "14px",
+      "13xl": "32px",
+      "7xl": "26px",
+      "29xl": "48px",
+      inherit: "inherit",
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
+
